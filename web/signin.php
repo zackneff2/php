@@ -3,17 +3,12 @@
   <head>
     <title>UM Schedule Me - Sign In</title>
   </head>
-
-  {% extends "base.html" %}
-
-  {% block content %}
-
   <body id="signin">
 
 
   <div class="container">
     <div class="row signin">
-      <img class="logosignin" src="{{ url_for('static', filename='logo.png')  }}" />
+      <img class="logosignin" src="logo.png" />
       <form role="signin" id="signin" method="post" action="signinProcess.php">
         <input type="text" id="username" name="username" placeholder="Username" required/>
         <input type="password" id="password" placeholder="Password" name="password"  required/>
@@ -29,5 +24,4 @@
   </div>
 
 </body>
-{% endblock %}
 </html>
