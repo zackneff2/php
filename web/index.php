@@ -1,6 +1,7 @@
 <?php
 
 require('../vendor/autoload.php');
+include('signin.php');
 
 $app = new Silex\Application();
 $app['debug'] = true;
