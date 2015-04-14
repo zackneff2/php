@@ -20,3 +20,4 @@ $app->get('/', function() use($app) {
 $app->run();
 
 ?>
+<h1>Hello</h1>
