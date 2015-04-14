@@ -18,6 +18,11 @@ $app->get('/', function() use($app) {
   render('signin.php');
 });
 
+$app->post('/signinProcess.php', function() use($app) {
+	$app['monolog']->appDebug('loggin output.');
+	
+})
+
 $app->run();
 
 ?>
